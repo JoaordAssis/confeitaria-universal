@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* Estilos para a página de listagem de produtos */
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content table th,
+.main-content table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-content table th {
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: 500;
+}
+
+.main-content table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.main-content table img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Botões de ação */
+.btn-adicionar,
+.btn-editar,
+.btn-inativar {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-adicionar {
+    background-color: #28a745;
+    margin-left: auto; /* Alinha o botão à direita */
+}
+
+.btn-adicionar:hover {
+    background-color: #218838;
+}
+
+.btn-editar {
+    background-color: #ffc107;
+}
+
+.btn-editar:hover {
+    background-color: #e0a800;
+}
+
+.btn-inativar {
+    background-color: #dc3545;
+}
+
+.btn-inativar:hover {
+    background-color: #c82333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-content table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .btn-adicionar {
+        margin-left: 10px;
+    }
+}
